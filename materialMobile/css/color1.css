@@ -1,0 +1,23 @@
+h1, h2, h3, h4 {
+	color:#ce4032 ! important;
+}
+
+.boldQuote{
+	font-weight:bold;
+	color:#ce4032;
+}
+
+.viewBtn{
+    background: #ce4032;
+}
+
+.them_bg_trnprt{
+    background: rgba(226, 64, 48, 0.7);
+}	
+
+.FootrIcon ul li{
+	background:#ce4032;
+	text-align:center;
+	display:inline-flex;
+	list-style:none;	
+}

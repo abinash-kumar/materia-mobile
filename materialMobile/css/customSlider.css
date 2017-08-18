@@ -1,0 +1,96 @@
+.container{
+	width:100%;
+	padding:0px;
+	height: auto;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+    background: rgba(255, 255, 255, 0);
+	user-select: none; -webkit-user-drag: none;
+}
+.slider_wrapper{
+	width:100%;
+	overflow: hidden;
+	position:relative;
+	height:280px;
+	top:auto;
+	user-select: none; -webkit-user-drag: none;
+	
+}
+.imagList{
+	width:4560px;
+	position: relative;
+	height: 260px;
+	list-style: none;
+	overflow: hidden;
+	float: left;
+	/*Chrom default padding for ul is 40px */
+	padding:0px;
+	margin:0px;.
+	user-select: none; -webkit-user-drag: none;
+}
+.imagList li{
+	height: 100%;
+	position: relative;
+	float: left;
+	display: inline;
+	touch-action: none;
+	user-select: none; -webkit-user-drag: none;
+}
+
+.imagList li img{
+	width:100%;
+	position: absolute;
+	float: left;
+	height:100% ! important;
+	background-size:cover;
+	touch-action: none;
+	user-select: none; -webkit-user-drag: none;
+}
+
+.nvgt{
+	text-align: center;
+	color:#000;
+	background:#fff;
+	position:absolute;
+	top: 120px;
+	width: 30px;
+	user-select: none; 
+	-webkit-user-drag: none;
+}
+.nvgt:hover{
+	user-select: none; 
+	-webkit-user-drag: none;
+}
+.nvgtleft{
+	left: 0px;
+	user-select: none; 
+	-webkit-user-drag: none;
+	font-size: 30px;
+}
+.nvgtright{
+	right: 0px;
+	user-select: none; 
+	-webkit-user-drag: none;
+	font-size: 30px;
+}
+
+
+
+/* fa icon blink css code here  */
+
+ @keyframes fa-blink {
+     0% { opacity: 1; }
+     25% { opacity: 0.25; }
+     50% { opacity: 1; }
+     75% { opacity: 0.75; }
+     100% { opacity: 0; }
+ }
+.fa-blink {
+	font-size:50px;
+   -webkit-animation: fa-blink .90s linear infinite;
+   -moz-animation: fa-blink .90s linear infinite;
+   -ms-animation: fa-blink .90s linear infinite;
+   -o-animation: fa-blink .90s linear infinite;
+   animation: fa-blink .90s linear infinite;
+}

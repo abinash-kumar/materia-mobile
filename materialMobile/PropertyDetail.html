@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hotel</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/Mstyle.css">
+		<link rel="stylesheet" href="css/color1.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/customSlider.css">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> </head>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<!-- link customSlider.css and customSlider.js on top -->  
+		
+		<!-- include ends here  -->
+		
+	</head>
+	<body>
+
+		<section class="headerTop">
+			<div class="headerLogo">
+				<span>The <span class="Hname"><b>Hotel</b></span></span>
+			</div>
+			<div class="navIcon" onclick="openNav()">
+				<i class="fa fa-bars" ></i>
+			</div>
+		</section>
+
+
+	
+		<section clear="clear">
+			<div class="propDtilimgCntainr ">
+				<div class="PrpDtlTopBdg clear">
+					<div class="btmBedgLft">
+						<h1 class="pDtlName">San Marino Apartments</h1>
+						<span class="propAddr">Plot 375, Opp Medanta Hospital, Medicity, </span>
+					</div>
+					<div class="btmBedgRgt" id="shareIcon">
+						<i class="fa fa-share-alt pShar" aria-hidden="true" id="shareSlect"></i>
+						<div class="sharOption">
+							<div class="sharOptionRgd">
+								<ul>
+									<a><li><i class="fa fa-phone" style="color:#309be3"></i>&nbsp;call</li></a>
+									<hr class="hrSep">
+									<a><li><i class="fa fa-envelope" style="color:#01bc8a"></i>&nbsp;Email</li></a>
+									<hr class="hrSep">
+									<a><li><i class="fa fa-whatsapp" style="color:#5dc153"></i>&nbsp;Whatsapp</li></a>
+									<hr class="hrSep">
+									<a><li><i class="fa fa-facebook" style="color:#3b5a9b"></i>&nbsp;Facebook</li></a>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<img src="images/propertyPic.jpeg" class="img img-responsive" />
+				<a href="contactUs.html" class="PTag">1 bhk<span style="color:#e24030;font-weight:bold;">/</span>2 bhk</a>
+			</div>
+			<div class="blok">
+				<div class="propBtnCntinr">
+					<div class="prop3BtnCntinrInner">
+						<ul>
+							<li><a class="topProp3Btn" href="contactUs.html"><i class="fa fa-phone"></i>Call</a></li>
+							<li><a class="topProp3Btn" href="contactUs.html" style="padding-left: 49px;padding-right: 25px;"><i class="fa fa-envelope"></i>Mail Us</a></li>
+							<li><a class="topProp3Btn" href="contactUs.html"><i class="fa fa-hotel"></i>Book Now</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<script>
+			$('#shareSlect').on('click',function(){
+				$('.sharOption').css({'height':'215px','width':'150px','-webkit-transition': 'width .1s,height .15s','font-size':'18px'});
+			});
+		</script>
+		
+		<script>
+		$(document).mouseup(function(e){  
+		var containr = $(".sharOption");
+			if (!containr.is(e.target) && (containr.has(e.target).length === 0)){
+				$('.sharOption').css({'height':'0px','width':'0px',	'-webkit-transition': 'width .6s,height .2s'});
+			}
+		});
+		</script>		
+		
+		
+		
+		
+<script>
+	$(window).scroll(function() {    
+		var scroll = $(window).scrollTop();
+
+		 //>=, not <=
+		if (scroll >=383) {
+			$(".propBtnCntinr").addClass("propBtnCntinrFix");
+		}else{
+			$(".propBtnCntinr").removeClass("propBtnCntinrFix");
+		}
+	});
+</script>
+	
+		<section class="aboutProprty gcard">
+			<h3 class="PropHdgap">About This Property . .</h3>
+			<span class="colorPGrey">If you're going to NOLA, why not be in the most popular location --the Marigny Triangle? 
+			Our artist studio apt. with exposed brick, kitchen, balcony access, garden and a fireplace 
+			is ideally situated on Frenchmen st (97% rating on TripAdvisor)!
+			<span class="colorPGrey dn">If you're going to NOLA, why not be in the most popular location --the Marigny Triangle? 
+			Our artist studio apt. with exposed brick, kitchen, balcony access, garden and a fireplace 
+			is ideally situated on Frenchmen st (97% rating on TripAdvisor)! </span>
+			<p class="moreBtn" onclick="$(this).prev().fadeToggle();  $(this).html($(this).text() == '+ more' ? '- less' : '+ more');">+ more</p>
+		</section>
+		<div class="bhk clear" onclick="opnPropSlidr(); init('image_slider2','image_sliderWdth2','prev2','next2');" >
+			<img src="images/rooms1.jpg" class="img img-responsive"/>
+			<div class="bhkContent">
+				<p class="pDtlName">1 BHK</p>
+				<p class="bhkText" >Max-Peopel : 3 </p>
+				<p class="bhkText grnClor">FREE cancellation </p>
+				<p class="bhkText">Breakfast included </p>
+				<span class="bhkBtn"><i class="fa fa-inr thmclr"></i>&nbsp;3500</span>
+				
+			</div>
+		</div>
+		<div class="bhk clear" onclick="opnPropSlidr();">
+			<img src="images/headBg.jpg" class="img img-responsive"/>
+			<div class="bhkContent">
+				<p class="pDtlName">2 BHK</p>
+				<p class="bhkText" >Max-Peopel : 6 </p>
+				<p class="bhkText grnClor">FREE cancellation </p>
+				<p class="bhkText">Breakfast included </p>
+				<span class="bhkBtn"><i class="fa fa-inr thmclr"></i>&nbsp;5500</span>
+				
+			</div>
+		</div>
+		<section class="aminites gcard">
+			<h3 class="PropHdgap">Aminities</h3>
+			<table>
+				<tr>
+					<td><i class="fa fa-check"></i>&nbsp;Gated Community</td>
+					<td><i class="fa fa-times"></i>&nbsp;Safety card</td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-check"></i>&nbsp;Free Parking</td>
+					<td><i class="fa fa-check"></i>&nbsp;Smoke detector</td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-check"></i>&nbsp;Kitchen & Chef</td>
+					<td><i class="fa fa-check"></i>&nbsp;Laptop friendly space</td>
+				</tr>
+			</table>
+		</section>	
+
+		<section class="gcard"  id="qA">
+			<h3 class="PropHdgap"> Q&A Suggested for you</h3>
+			<br>
+
+			<!-- question start  -->
+			
+			<p onclick=''><i class="fa fa-file-text-o" ></i>&nbsp;I'm a host. How do I make a changes ?<i class="fa fa-plus pull-right"></i></p>
+			<span class="colorPGrey dn">If you're going to NOLA, why not be in the most popular location --the Marigny Triangle? 
+			Our artist studio apt. with exposed brick, kitchen, balcony access, garden and a fireplace 
+			is ideally situated on Frenchmen st (97% rating on TripAdvisor)!</span>
+
+			<!-- question end  -->
+			
+			<!-- question start  -->
+			
+			<p><i class="fa fa-file-text-o" ></i>&nbsp;How is the price determined for reservation?<i class="fa fa-plus pull-right"></i></p>
+			<span class="colorPGrey dn">If you're going to NOLA, why not be in the most popular location --the Marigny Triangle? 
+			Our artist studio apt. with exposed brick, kitchen, balcony access, garden and a fireplace 
+			is ideally situated on Frenchmen st (97% rating on TripAdvisor)!</span>
+			
+			<!-- question end  -->
+
+			<!-- question start  -->
+			
+			<p><i class="fa fa-file-text-o" ></i>&nbsp;How does hotel handle security deposits? <i class="fa fa-plus pull-right"></i></p>
+			<span class="colorPGrey dn">If you're going to NOLA, why not be in the most popular location --the Marigny Triangle? 
+			Our artist studio apt. with exposed brick, kitchen, balcony access, garden and a fireplace 
+			is ideally situated on Frenchmen st (97% rating on TripAdvisor)!</span>
+			
+			<!-- question end  -->
+
+			<!-- question start  -->
+			
+			<p><i class="fa fa-file-text-o" ></i>&nbsp;What is the hotel cancellation policy?<i class="fa fa-plus pull-right"></i></p>
+			<span class="colorPGrey dn">If you're going to NOLA, why not be in the most popular location --the Marigny Triangle? 
+			Our artist studio apt. with exposed brick, kitchen, balcony access, garden and a fireplace 
+			is ideally situated on Frenchmen st (97% rating on TripAdvisor)!</span>
+			
+			<!-- question end  -->
+
+			<!-- question start  -->
+			
+			<p><i class="fa fa-file-text-o" ></i>&nbsp;How do I cancel my reservation? <i class="fa fa-plus pull-right"></i></p>
+			<span class="colorPGrey dn">If you're going to NOLA, why not be in the most popular location --the Marigny Triangle? 
+			Our artist studio apt. with exposed brick, kitchen, balcony access, garden and a fireplace 
+			is ideally situated on Frenchmen st (97% rating on TripAdvisor)!</span>
+			
+			<!-- question end  -->			
+		</section>			
+			<script>
+				$('#qA p').click(function(){
+				$(this).children().toggleClass('fa-plus fa-minus');
+				$(this).next().slideToggle(100);
+				});
+			</script>		
+		
+		
+ <!-- HTML code for new slider by jquery -->
+
+			
+<h3 class="PropHdgap" style="padding-left:10px;"> Similar Property</h3>
+
+<div id="slider">
+  <a href="javascript:;" class="control_next">></a>
+  <a href="javascript:;" class="control_prev"><</a>
+  <ul id="similer">
+    <li>
+		<div class="propListCard ">
+			<img src="images/Similar.jpg" class="img img-responsive" />
+			<div class="btmBedg clear">
+				<div class="btmBedgLft">
+					<Span class="propName">San Marino Apartments</span><br>
+					<span class="propAddr">Plot 375, Opp Medanta Hospital, Medicity, </span><br>
+					<span class="propAddr">Entire home/apt · 1 bed · 2 guests </span><br>
+				</div>
+				<div class="btmBedgRgt">
+					<span class="starsRat">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</span><br>
+					<span><small>starting at</small></span>
+					<p><i class="fa fa-inr"></i> 4500</p>
+				</div>			
+			</div>
+		</div>	
+	</li>
+    <li>
+		<div class="propListCard ">
+			<img src="images/headBg.jpg" class="img img-responsive" />
+			<div class="btmBedg clear">
+				<div class="btmBedgLft">
+					<Span class="propName">San Marino Apartments</span><br>
+					<span class="propAddr">Plot 375, Opp Medanta Hospital, Medicity, </span><br>
+					<span class="propAddr">Entire home/apt · 1 bed · 2 guests </span><br>
+				</div>
+				<div class="btmBedgRgt">
+					<span class="starsRat">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</span><br>
+					<span><small>starting at</small></span>
+					<p><i class="fa fa-inr"></i> 4500</p>
+				</div>			
+			</div>
+		</div>	
+	</li>    
+	<li>
+		<div class="propListCard ">
+			<img src="images/rooms1.jpg" class="img img-responsive" />
+			<div class="btmBedg clear">
+				<div class="btmBedgLft">
+					<Span class="propName">San Marino Apartments</span><br>
+					<span class="propAddr">Plot 375, Opp Medanta Hospital, Medicity, </span><br>
+					<span class="propAddr">Entire home/apt · 1 bed · 2 guests </span><br>
+				</div>
+				<div class="btmBedgRgt">
+					<span class="starsRat">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</span><br>
+					<span><small>starting at</small></span>
+					<p><i class="fa fa-inr"></i> 4500</p>
+				</div>			
+			</div>
+		</div>	
+	</li>
+  </ul>  
+</div>
+
+ <!-- end of HTML code for new slider by jquery -->	
+		
+
+
+		<br>
+		<section class="footer clear">
+			<img src="images/footer.jpg" class="img img-responsive" />	
+			<div class="FootrOverley them_bg_trnprt"></div>
+			<div class="footerCntnt" >
+				<h3> Call Us +91-5894685794 </h3>
+				<div class="FootrIcon">
+					<ul>
+						<li><a class="fIcon" href="contactUs.html"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="fIcon" href="contactUs.html" ><i class="fa fa-rss"></i></a></li>
+						<li><a class="fIcon" href="contactUs.html"><i class="fa fa-linkedin"></i></a></li>
+						<li><a class="fIcon" href="contactUs.html"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+				<span class="lnklst"><a href="contactUs.html">Home</a>|<a href="contactUs.html">Privacy & Policy</a>|<a href="contactUs.html">Contact Us</a> </span>
+				<p><i><small>Copyright © 2016 The Perch All rights reserved.</small></i></p>
+			</div>
+		</section>
+
+		
+<!-- navBar code starts from here -->
+<div class="navOverley" scroll="false">
+	<div id="mySidenav" class="sidenav offEffect">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="border:0;">&times;</a>
+	  <a href="contactUs.html"><i class="fa fa-home"></i>Home</a>
+	  <a href="contactUs.html"><i class="fa fa-location-arrow"></i>Service Apartments</a>
+	  <a href="contactUs.html"><i class="fa fa-location-arrow"></i>Apartment in Gurgaon</a>
+	  <a href="contactUs.html"><i class="fa fa-location-arrow"></i>Service Apartment in Goa</a>
+	  <a href="contactUs.html"><i class="fa fa-location-arrow"></i>Service Apartment in Delhi</a>
+	  <a href="contactUs.html"><i class="fa fa-code"></i>About Us</a>
+	  <a href="contactUs.html"><i class="fa fa-vcard-o"></i>Contact Us</a>
+	</div>	
+</div>
+
+<!-- Slider on over ley for property page  -->
+
+
+<div id="propSliderOvrley" class="PropSlidr dn" >
+	<a href="javascript:void(0)" class="closebtn" onclick="closPropSlidr();" ><i class="fa fa-chevron-left"></i></a>
+
+	<center> 
+		<div class="slider-content">
+			<h4 class="padding12">Write room heading</h4>
+			<div class="container" id='swipe2'>
+				<div class="slider_wrapper" id='image_sliderWdth2'>
+					<ul id="image_slider2" class="imagList" >
+						<li><img src="5.jpg"></li>
+						<li><img src="3.jpg"></li>
+						<li><img src="1.jpg"></li>
+						<li><img src="2.jpg"></li>
+						<li><img src="6.jpg"></li>
+						<li><img src="4.jpg"></li>
+					</ul>					
+					<span class="nvgt nvgtleft" id="prev2"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></span>
+					<span class="nvgt nvgtright" id="next2"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span>
+				</div>
+			</div>
+			<p class="colorPGrey padding12 mrgnBtm0">Award winning property; The Perch Service Apartment (Cyber Park) is one of the best Luxury Service Apartments in Gurgaon.</p>
+			<p class="padding12 clrBlck mrgnBtm0"><b>Aminites</b></p>
+			<p class="ovrLyIcn padding12">
+			<i class="fa fa-hotel"></i>
+			<i class="fa fa-building-o"></i>
+			<i class="fa fa-cutlery "></i>
+			<i class="fa fa-map-marker"></i>
+			<i class="fa fa-volume-down"></i>
+			</p>
+			<span class="padding12 grnClor">book Now at <i class="fa fa-inr"></i>3500</span><a href="contactUs.html" class="bkNwBtn pull-right" style="color: #fff ! important">Book Now</a>
+		</div>
+	</center>
+</div>
+
+
+<!-- full map on overley for property page  -->	
+		
+	</body>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/hammer.min.js"></script>
+	<script src="js/app.js"></script>
+	
+	
+<script>
+	
+<!-- js for on top property image slider starts here   -->
+function opnPropSlidr(){
+document.getElementById("propSliderOvrley").style.display = "block";
+}
+
+function closPropSlidr() {
+document.getElementById("propSliderOvrley").style.display = "none";	
+}
+	
+	
+</script>
+
+
+<script>
+jQuery(document).ready(function ($) { 
+	var slideCount = $('#slider ul li').length;
+	var slideWidth = $('#slider ul li').width();
+	var slideHeight = $('#slider ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#slider').css({ width: slideWidth, height: slideHeight });
+	
+	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+    $('#slider ul li:last-child').prependTo('#slider ul');
+
+    function moveLeft() {
+        $('#slider ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('#slider ul').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function () {
+        moveRight();
+    });
+
+	var myElement = document.getElementById('similer');
+
+		// create a simple instance
+		// by default, it only adds horizontal recognizers
+		var mc = new Hammer(myElement);
+
+		// listen to events...
+		mc.on("swipeleft swiperight", function(ev) {
+		if(ev.type =='swiperight'){
+			moveLeft();
+		}
+
+		if(ev.type =='swipeleft'){
+			moveRight();
+		}	
+	});	
+	
+});    
+</script>
+
+<script src="js/customSlider.js" type="text/javascript"></script>
+</html>

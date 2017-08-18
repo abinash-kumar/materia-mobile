@@ -1,0 +1,940 @@
+
+/* All ---------------------------------------------------------------- set*/
+* {
+    box-sizing: border-box;
+}
+ html {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    font-size: 16px;
+}
+
+body {
+	background-color: #f2f2f2 ! important;
+    font-size: 62.5% !important;
+    text-rendering: optimizeLegibility !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    font-family: "Muli", Helvetica, Arial, sans-serif;
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #444 !important;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+section, nav, article, footer {
+    display: block;
+}
+
+h1{
+	font-size: 26px;
+    /* font-family: Varela Round ! important; */
+	font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+	letter-spacing: 0.0825em ! important;
+    font-family: Arial, Helvetica, sans-serif ! important;
+}
+
+h1, h3{
+	font-size: 1.5em ! important;
+}
+
+hr{
+	border-top: 1px solid #e4e2e2;
+}
+
+p {
+	line-height:25px;
+	font-size:1em;
+}
+
+.clear:before {
+	content: "";
+    display: table;
+	clear: both;	
+}
+
+.clear:after {
+	content: "";
+    display: table;
+	clear: both;	
+}
+
+a {
+	color:#fff ! important;
+}
+
+a:active {
+	text-decoration:none ! important;
+	color:#fff ! important;
+}
+
+a:hover{
+	text-decoration:none ! important;
+	color:#fff ! important;
+}
+
+
+a:focus {
+	text-decoration:none ! important;
+	color:#fff ! important;
+}
+
+
+@media only screen and (max-device-width:768px) {
+    
+body { min-width: 100%; 
+min-height:100%;}
+
+.gcard{
+	background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    padding-top: 10px;
+    margin: 0 8px 10px 8px;
+	padding:5px 16px;
+}
+
+.headerTop{
+	padding: 10px 0px;
+	position:absolute;
+    width: 100%;
+    box-shadow: 0px 5px 5px rgba(107, 107, 107, 0.57);
+    z-index: 100;
+	background:#fff;
+}
+
+.headerLogo{
+	text-shadow: 0px 5px 5px rgba(74, 74, 74, 0.46);
+	float:left;
+	font-size:2.5em;
+    color: #041e3a;
+	padding:5px;
+	font-weight:bold;
+}
+
+.Hname{
+	color:rgba(226, 64, 48, 1);
+}
+
+.navIcon{
+    text-shadow: 0px 1px 5px rgba(74, 74, 74, 0.39);
+    margin: 0px 20px;
+    float: right;
+    color: rgb(4, 30, 58);
+    font-size: 3em;
+}
+
+.imgCntainr img{
+	width:100%;
+	height:320px;
+}
+
+.imgCntainr{
+	margin-top: 80px;
+	position:relative;
+}	
+
+.btnTop{
+	z-index:10;
+    position: absolute;
+    padding: 12px 0px;
+    bottom: -25px;
+    font-size: 1.3em;
+    color: #fff;
+	width: 45%;
+	text-align: center;
+}	
+
+
+.btnTop:hover{
+	 background: rgba(226, 64, 48, 1);
+}
+
+	
+.btnTopL{
+	    left: 12px;
+}
+
+.btnTopR{
+	    right: 12px;
+}
+
+.top3BtnCntinr{
+	position:relative;
+    width: 100%;
+    height: 115px;
+    background: #041e3a;
+	color:#fff;
+	text-align:center;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.top3BtnCntinrInner{
+	width:100%;
+	position:absolute;
+	bottom:0;
+}
+
+.top3BtnCntinrInner ul{
+	width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.top3BtnCntinrInner ul li{
+	text-align:center;
+	display:inline-flex;
+	list-style:none;
+	
+}
+
+
+.top3Btn{
+	float:left;
+	margin:10px;
+}
+.top3Btn i{	
+	font-size:3em;
+	display:block;
+	}
+
+.txtCenter{
+	text-align:center;
+}	
+
+.txtLeft{
+	text-align:left;
+}
+
+.mrgnTop30{
+	margin:10px 10px  ! important;
+}
+
+.detailSec{
+	margin-top:0px;
+}
+
+.DetilSec{
+	background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    border-radius: 2px;
+	padding-top:10px;
+    margin: 0 8px 10px 8px;
+}
+
+.colorGrey{
+	color:#444 ! important;
+}
+
+.paragrf{
+	margin:15px 0px;
+	padding:5px 10px;
+	text-align:justify;
+}
+
+.DetilSecImg{
+	width:30%;
+	margin:auto;
+}
+
+.DetilSecImg img {
+	width:100%;
+	height:10%;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.footer{
+	position:relative;
+	width:100%;
+	height:150px;
+}
+.footer img{
+	width:100%;
+	height:150px;
+}
+
+.FootrOverley{
+	top:0;
+	position:absolute;
+	width:100%;
+	height:150px;
+}
+
+.footerCntnt{
+	top:0;
+	width:100%;
+	height:150px;
+	position:absolute;
+	color:#fff;
+	text-align:center;
+}
+
+.footerCntnt h3{
+	color:#fff ! important;
+}
+
+
+.mrgnBtm0{
+	margin-bottom:0 ! important;
+}
+
+
+
+.awrd{
+	background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    padding: 10px;
+    margin: 0 8px 10px 8px;
+	padding:10px;
+}
+	
+.awrdLeft{
+	height: 280px;
+	width:50%;
+	float:left;
+}
+
+.awrdRight{
+	height: 280px;
+	width:50%;
+	float:left;
+}
+
+.awrdLeft img{
+    height: 50%;
+    width: 100%;
+}
+
+.awrdRight img{
+	width:100%;
+	height:100%;
+}
+
+.FootrIcon ul{
+	width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.FootrIcon ul li{
+	text-align:center;
+	display:inline-flex;
+	list-style:none;	
+}
+
+.fIcon{
+	float:left;
+	margin:10px 20px;
+}
+.fIcon i{	
+	font-size:2em;
+	display:block;
+	}
+	
+.lnklst a{
+	padding:0px 10px;
+}	
+
+
+/* Property listing pages css starts here  */
+
+.propTop{
+	border-bottom: 1px solid #ccc;
+	font-family: candara;
+	font-size:2.2em;
+	margin-top:80px;
+	position:relative;
+	width:100%;
+	height:170px;
+}
+
+.propTop img{
+	width:100%;
+	height:170px;
+	position:absolute;
+}
+
+.propTopOverley{
+	width:100%;
+	background:rgba(255, 255, 255, 0.83);
+	height:170px;
+	position:absolute;
+}
+
+.propTopContainr{
+    color: #33333;
+    position: absolute;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.boldQuote{
+	font-weight:bold;
+}
+
+.listContnr{
+
+}
+
+.propListCard img{
+	width:100%;
+	height:200px;
+}
+
+.btmBedg{
+	padding:5px;
+	width:100%;
+	background:#edecec;
+}
+
+.btmBedgLft{
+	width:80%;
+	float:left;
+}
+
+.btmBedgRgt{
+	text-align:right;
+	width:20%;
+	float:left;
+}
+
+.propName{
+    font-size: 1.3em;
+}
+
+.propAddr {
+	font-size: 90% ! important;
+}
+
+.starsRat{
+	color:orange;
+	font-size: 70% ! important;
+}
+
+
+.viewBtn{
+	text-align:center;
+    width: 100%;
+    padding: 6px;
+	font-size:1.5em;
+	border-radius:0px;
+	margin: 20px auto;
+}
+
+
+
+/* css for property details page starts from here */
+
+
+
+.propDtilimgCntainr{
+	margin-top:80px;
+	position:relative;
+    height: auto;
+}
+
+.propDtilimgCntainr img{
+	width:100%;
+	height:240px;
+}
+
+.PTag{
+	position:absolute;
+	font-size:1.2em;
+	padding:10px;
+	background:rgba(68, 68, 68, 0.82);
+	color:#fff;
+	left:12px;
+	bottom:12px;
+}
+
+.PrpDtlTopBdg{
+	padding:10px;
+}
+
+.pDtlName{
+	color:#444;
+	font-size:1.5em;
+	margin:0px;
+}
+
+.pShar{
+    font-size:2.5em ! important;
+    color: #e24030;
+}
+
+#shareIcon > .sharOption{
+	top:10px;
+	right:8px;
+	position:absolute;
+	height:0;
+	width:0;
+	background:#fff;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	-webkit-transition: width .1s,height .15s;
+	font-size:0px;
+	overflow:hidden;
+}
+
+	/* height:215px; */
+	/* width:150px; */
+
+
+.sharOption ul{
+	background:#fff;
+	padding:0;
+	list-style:none;
+	text-align:left;
+}
+
+
+.sharOptionRgd{
+	height:215px;
+	width:150px;
+	background:#fff;
+}
+.hrSep{
+	border-top: 1px solid #e6e6e6;
+	margin:10px 5px;
+}
+
+.sharOption ul li{
+	padding-left:15px;
+	margin:12px 5px;
+	color:#000 ! important;
+}
+
+
+.aboutProprty{
+	text-align:justify;
+	margin-top:10px;
+}
+
+.PropHdgap{
+	margin: 10px 0px;
+}
+
+.padding12{
+	padding:0px 12px;
+}
+
+.colorPGrey{
+	color:#444;
+}
+
+.moreBtn{
+    color: #0799f1;
+	font-size:1.2em;
+}
+
+.aminites table tr td:nth-child(2){
+	padding-left:10px;
+}
+
+.aminites table tr td{
+	vertical-align:top;
+	padding-top:10px;
+}
+
+.aminites{
+	font-size:1em;
+}
+
+.dn{
+	display:none;
+}
+
+.qA p{
+	border-bottom:1px solid #d6d6d6;
+	padding:5px;
+}
+
+.propBtnCntinrFix{
+	position:fixed;
+	top:0;
+	z-index:100;
+}
+
+.propBtnCntinr{
+    width: 100%;
+    height: 65px;
+    background: #041e3a;
+    color: #fff;
+    text-align: center;
+}
+
+.blok{
+	height:65px;
+}
+
+.prop3BtnCntinrInner{
+	width:100%;
+}
+
+.prop3BtnCntinrInner ul{
+	width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.prop3BtnCntinrInner ul li{
+	text-align:center;
+	display:inline-flex;
+	list-style:none;
+	
+}
+
+.topProp3Btn{
+	float:left;
+	margin:10px;
+}
+
+.topProp3Btn i {
+    font-size: 2em;
+	display:block;
+}
+
+
+.bhk{
+	width:95.8%;
+	height:auto;
+	position:relative;	
+	background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    padding-top: 10px;
+    margin: 0 8px 10px 8px;
+}
+
+
+.bhkContent{
+	padding-left:5px;
+	float:left;
+	width:68%;
+}
+
+.bhkText{
+    color: #808080;
+    margin: 0;
+    padding: 0;
+}
+
+.bhkBtn{
+	position:absolute;
+	bottom:5px;
+	right:5px;
+	padding:5px;
+	color:#444;
+	/* background:#444; */
+	text-align:center;
+}
+
+.grnClor{
+	color:green;
+}
+
+.thmclr{
+	color: #e24030;
+}
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 250px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 110; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #fff; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 125px; /* Place content 60px from the top */
+       -webkit-transition:.3s ease all;
+   -moz-transition:.3s ease all;
+     -o-transition:.3s ease all;
+        transition:.3s ease all;
+    
+}
+
+/* The navigation menu links */
+.sidenav a {
+	width:250px;
+    padding: 13px 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000 ! important;
+	font-weight:100;
+    display: block;
+    transition: 0.3s;
+	border-bottom: 1px solid #ccc;
+}
+
+.sidenav a  i{
+	font-size: 20px;
+	width: 30px;
+}
+
+
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #000 ! important;
+	font-weight:100;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+	width:30px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+.navOverley{
+	width:0%;
+	transition: 0s;
+	z-index:101;
+	background: rgba(0, 0, 0, 0.84);
+	position:fixed;
+	top:0;
+	height:100%;
+}
+
+.offEffect{
+	left:-250px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* css for overley image slide  */
+
+/* overley slider css starts here  */
+
+.PropSlidr {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+	right:0;
+	bottom:0;
+    background-color:#012035;
+    background-color: #fff;
+    transition: 0.2s;
+	overflow-x: hidden ! important;
+}
+
+
+.PropSlidr a {
+    padding: 1%;
+    text-decoration: none;
+    font-size: 6vw;
+    color: #000 ! important;
+    display: block;
+    transition: 0.2s;
+}
+
+.PropSlidr a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.PropSlidr .closebtn {
+    position: absolute;
+    left: 10px;
+    font-size: 8vw;
+	line-height: 80px;
+	margin: 3%;
+	z-index:10;	
+}
+
+
+.slider-content {
+    position: absolute;
+    top: 8%;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+	height:auto;
+	color:grey ! important;
+}
+
+.clrBlck{
+	color:black;
+}
+.bkNwBtn{
+	border-radius:2px;
+	margin-top: 30px;
+	margin-right: 30px;
+    background: #e24030;
+	padding:2px 10px ! important;
+}
+
+.ovrLyIcn{
+	font-size:18px;
+	color:#fff;
+}
+
+.ovrLyIcn i{
+	text-align:center;
+	width:30px;
+	margin:5px;
+	background:grey;
+	padding:5px;
+}
+
+
+
+
+/* css for new similar property slider */
+
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  height: 286px;
+  background: #ccc;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+/* css for about us page  */
+.propListCard{
+	
+}
+
+.propListCard h2{
+	font-size:18px;
+	text-align:center;
+}
+
+.ourTemInner img{
+	border-radius:50%;
+	width:170px;
+	height:170px		;
+}
+
+    #slides,
+    #slides2,
+    #slides3 {
+      display: none;
+    }
+
+    .slidesjs-navigation {
+	  display:none;
+	  
+    }
+
+
+    .slidesjs-pagination {
+      margin: 0 20px;
+      float:right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(../images/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+
+
+/* end of css for smilar property slider  */
+
